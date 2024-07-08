@@ -1,0 +1,55 @@
+#box{
+    margin-bottom: 50px;
+    background: linear-gradient(to left, #09fcfe, #09fcfe) left top no-repeat,
+    linear-gradient(to bottom, #09fcfe, #09fcfe) left top no-repeat,
+    linear-gradient(to left, #09fcfe, #09fcfe) right top no-repeat,
+    linear-gradient(to bottom, #09fcfe, #09fcfe) right top no-repeat,
+    linear-gradient(to left, #09fcfe, #09fcfe) left bottom no-repeat,
+    linear-gradient(to bottom, #09fcfe, #09fcfe) left bottom no-repeat,
+    linear-gradient(to left, #09fcfe, #09fcfe) right bottom no-repeat,
+    linear-gradient(to left, #09fcfe, #09fcfe) right bottom no-repeat;
+    background-size: 2px 20px, 20px 2px, 2px 20px, 20px 2px;
+}
+.boxTitle{
+    height: 32px;
+    /* background: rgba(13, 126, 222, 1); */
+    /* background:linear-gradient(to right, rgba(13, 126, 222, 1), rgba(13, 125, 222, 0.322)); */
+    /* background-image: url("../assets/1.png"); */
+    /* background-size: contain;
+    background-repeat: no-repeat; */
+    border-radius:  0 5px 0 0;
+    /* border: 1px solid #eee; */
+    color: rgba(13, 126, 222, 1);
+    font-size: 18px;
+    font-weight: bold;
+    vertical-align: middle;
+    box-sizing: border-box;
+    margin-left: 10px;
+    /* padding-left: 15px; */
+}
+/* .cube {
+    display: inline-block;
+    width: 5px;
+    height: 32px;
+    background-color: rgba(210, 51, 90, 1);
+    margin-right: 15px;
+} */
+
+.boxContent{
+    background: rgba(0,0,0,0.05);
+    box-sizing: border-box;
+    
+
+}
+
+/*图片替换*/
+#box-img {
+    width: 180px;
+    height: 32px;
+    background-image: url('../assets/1.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;;
+    position: absolute;
+    padding-left: 5px;
+}

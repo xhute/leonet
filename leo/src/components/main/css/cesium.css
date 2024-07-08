@@ -1,0 +1,234 @@
+.cesium-button {
+    background: #303336;
+    border: 1px solid #444;
+    color: #edffff;
+    fill: #edffff;
+    border-radius: 4px;
+    padding: 5px 12px;
+    margin: 10px 10px;
+    cursor: pointer;
+    overflow: hidden;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline:0 none !important;
+    z-index:999;
+}
+.cesium-button:focus,
+.cesium-button:active:focus,
+.cesium-button.active:focus,
+.cesium-button.focus,
+.cesium-button:active.focus,
+.cesium-button.active.focus{
+    outline: none;
+    border-color: transparent;
+    box-shadow:none;
+}
+#toolbar{
+    width: 100vw;
+    height: 3vh;
+    margin-top: 5px;
+    top: 5px;
+    position: absolute;
+    padding-top: 1px;
+    padding-left: 1.5vw;
+    background-image: url("../assets/top.png");
+    background-position: center;
+    z-index: 999;
+}
+
+#satelliteList {
+    position: absolute;
+    top: 2%;
+    width: 14vw;
+    height: 70vh;
+    padding-top: 5vh;
+    padding-left: 10px;
+    z-index: 999;
+}
+
+#title {
+    color: rgba(13, 126, 222, 1);
+    position: absolute;
+    z-index: 999;
+    left: 50%;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-size: 40px;
+    transform: translate(-50%);
+}
+
+.box-title {
+    width: 100%;
+    height: 2vh;
+    z-index: 999;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-image: url("../assets/title_con.png");
+}
+
+.left-wrap{
+    width: 22vw;
+    height: 90vh;
+    left: 5px;
+    top: 0px;
+    padding-top: 8vh;
+    padding-left: 1.5vw;
+    position: absolute;
+    z-index: 999;
+}
+
+.right-wrap{
+    width: 22vw;
+    height: 100vh;
+    right: 1.5vw;
+    top: 0px;
+    padding-top: 8vh;
+    padding-left: 1.5vw;
+    position: absolute;
+}
+
+.bottom-wrap{
+    width: 50vw;
+    height: 5vh;
+    left: 25vw;
+    bottom: 15vh;
+    position: absolute;
+}
+
+.box-title-font {
+    color: #08acbd;
+    margin-left: 150px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.btnSelected{
+    background:#4488bb
+}
+.cesium-viewer-bottom{
+    display: none !important;
+}
+
+.cesium-viewer-toolbar{
+    width: 10vw;
+    left: 50vw;
+    margin-top: 5vh;
+    transform: translateX(-50%);
+}
+
+.right-box {
+    width: 100%;
+    height: 20vh;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.baseStation-wrap {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-image: url("../assets/rightCon01.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.baseStationIcon {
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/basestation_work.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom: 2px solid rgba(13, 126, 222, 1);
+}
+
+.dashboardIcon {
+    width: 32px;
+    height: 32px;
+    float: right;
+    margin-top: 28%;
+    box-sizing: border-box;
+    background-image: url("../assets/dot_32.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
+.dashboardIcon:hover{
+    opacity: 1;
+}
+
+.baseStationText_title {
+    color: rgba(13, 126, 222, 1);
+    font-size: 16px;
+    margin: 0;
+}
+
+.baseStationText_content{
+    color: rgba(13, 126, 222, 1);
+    font-size: 18px;
+    border: 500;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.ant-tag-success, .ant-tag-error{
+    background-color: transparent !important;
+    border: none !important;
+    font-size: 16px !important;
+}
+
+.row-style {
+    width:"100%";
+    height:80px;
+    padding-left:8px;
+    padding-top:5px; 
+}
+
+p {
+    margin: 0;
+}
+
+#baseStationList::-webkit-scrollbar {
+    width: 4px !important;
+    height: 8px !important;
+}
+
+#baseStationList::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(223, 223, 223, 0.5) !important;
+    background: #42484c79 !important;
+}
+
+#baseStationList::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #08090b79 !important;
+    border-radius: 2 !important;
+    background: #10131679 !important;
+}
+
+#left-border-line, #right-border-line{
+    background-image: url('../assets/header-line.png'); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:90vh;
+    height:1vw;
+    position: absolute;
+    top:30px;
+    
+}
+
+#left-border-line{
+    transform: rotate(90deg); 
+    transform-origin:left top;
+    left: 1vw;
+}
+#right-border-line{
+    transform: rotate(-90deg); 
+    transform-origin:right top;
+    right: 1vw;
+}
+
