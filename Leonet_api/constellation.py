@@ -28,40 +28,6 @@ import math
 
 import networkx as nx
 
-# try to import numba funcs
-try:
-	import numba
-	USING_NUMBA = True
-except ModuleNotFoundError:
-	USING_NUMBA = False
-	print("you probably do not have numba installed...")
-	print("reverting to non-numba mode")
-
-PRINT_LEVEL = 0           # the higher the number, the more stuff printed
-
-
-def sdout(level=0, *args):
-	"""a print function; chooses to print based on PRINT_LEVEL
-
-	Parameters
-	----------
-	level : int
-		print_level, higher = more printing
-	args :
-		the stuff to print
-
-	Returns
-	-------
-	None
-	"""
-
-	if level <= PRINT_LEVEL:
-		toPrint = ''
-		for arg in args:
-			toPrint += str(arg)
-		print(toPrint)
-	return None
-
 
 # the mean radius of the earth in meters according to wikipedia
 EARTH_RADIUS = 6371000

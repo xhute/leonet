@@ -13,7 +13,7 @@ class Coordinator():
         with open('static/test.czml', 'r') as f:
             self.data = json.load(f)
 
-    def build(planes, nodes, inclination, altitude):
+    def build(self, planes, nodes, inclination, altitude):
         pass
 
     def update(self, t):

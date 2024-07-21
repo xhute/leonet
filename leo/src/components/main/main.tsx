@@ -388,7 +388,7 @@ const CesiumComponent: React.FC<CesiumComponentType> = (props) => {
                   gradient: 0.1,
                 });
 
-              } else if (re_gps.exec(ele.id) != null) {
+              } else  {
                 // gps轨迹
                 entityColor = new Cesium.Color(
                   210 / 255,
@@ -1551,7 +1551,7 @@ const CesiumComponent: React.FC<CesiumComponentType> = (props) => {
 
   return (
     <>
-      <div id="title">卫星态势仿真监控平台</div>
+      <div id="title">大规模星座通信</div>
       <div className="left-wrap">
         <Box
           title="卫星列表"
@@ -1563,8 +1563,8 @@ const CesiumComponent: React.FC<CesiumComponentType> = (props) => {
             />
           }
         />
-        <Box title="卫星数量统计图" component={<SatelliteBar />} />
-        <Box title="卫星数量变化图" component={<SatelliteNumberChart />} />
+        {/* <Box title="卫星数量统计图" component={<SatelliteBar />} />
+        <Box title="卫星数量变化图" component={<SatelliteNumberChart />} /> */}
       </div>
       <div
         id="cesiumContainer"
@@ -1593,7 +1593,7 @@ const CesiumComponent: React.FC<CesiumComponentType> = (props) => {
           title="极地图"
           component={<PolarEarth position={polarPosition}></PolarEarth>}
         ></Box>
-        <Box
+        {/* <Box
           title="卫星实时高度图"
           component={
             <HeightChart
@@ -1611,7 +1611,7 @@ const CesiumComponent: React.FC<CesiumComponentType> = (props) => {
               setDashboard={setDashboard}
             />
           }
-        />
+        /> */}
       </div>
       {/* <div className="bottom-wrap">
         <Box title="卫星数量变化图" component={<SatelliteNumberChart />} />
@@ -1625,7 +1625,7 @@ const CesiumComponent: React.FC<CesiumComponentType> = (props) => {
           }}
           className="cesium-button"
         >
-          MeasureDistance
+          1
         </button>
         <button
           type="button"
@@ -1635,7 +1635,7 @@ const CesiumComponent: React.FC<CesiumComponentType> = (props) => {
           }}
           className="cesium-button"
         >
-          MeasureArea
+          2
         </button>
       </div>
       <div id="left-border-line"></div>
